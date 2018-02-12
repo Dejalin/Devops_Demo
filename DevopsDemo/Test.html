@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form>
+        <fieldset style="width:30%">
+            <legend><b>SUMMARY</b></legend>
+                <table border="1" style="border-collapse:collapse; padding:10px; width:100%">
+                    <tr>
+                        <td style="font-size:12px; font-family:Professional; width:30%"><b>Build Trigger</b></td>
+                        <td style="font-size:12px;font-family:Professional">${BUILD_CAUSE}</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:12px;font-family:Professional; width:30%"><b>Build Status</b></td>
+                        <td style="font-size:12px;font-family:Professional">$BUILD_STATUS</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:12px;font-family:Professional; width:30%"><b>CheckIn By</b></td>
+                        <td style="font-size:12px;font-family:Professional">Not Applicable</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:12px;font-family:Professional; width:30%"><b>Total Build Warnings</b></td>
+                        <td style="font-size:12px;font-family:Professional">0</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:12px;font-family:Professional; width:30%"><b>Total Build Errors</b></td>
+                        <td style="font-size:12px;font-family:Professional">0</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:12px;font-family:Professional; width:30%"><b>CheckIn Message</b></td>
+                        <td style="font-size:12px;font-family:Professional">Not Applicable</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:12px;font-family:Professional; width:30%"><b>Files Changed</b></td>
+                        <td style="font-size:12px;font-family:Professional">Not Applicable</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:12px;font-family:Professional; width:30%"><b>Job URL</b></td>                        
+                        <td style="font-size:12px;font-family:Professional"><a href="${BUILD_URL}">${JOB_NAME}</a></td>
+                    </tr>
+
+                </table>             
+        </fieldset>
+
+        <fieldset style="width:30%">
+            <legend><b>BUILD INFO</b></legend>
+            <table border="1" style="border-collapse: collapse; padding: 10px; width: 100%">
+                <tr>
+                    <td style="font-size:12px; font-family:Professional; width:30%"><b>Current Build Number</b></td>
+                    <td style="font-size:12px;font-family:Professional">${BUILD_DISPLAY_NAME}</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 12px; font-family: Professional; width: 30%"><b>Build Status</b></td>
+                    <td style="font-size:12px;font-family:Professional">$BUILD_STATUS</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 12px; font-family: Professional; width: 30%"><b>Current Build Server</b></td>
+                    <td style="font-size:12px;font-family:Professional">CustomTenant-Build</td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width:30%">
+            <legend><b>LOGS</b></legend>
+            <table border="1" style="border-collapse: collapse; padding: 10px; width: 100%">
+                <tr>
+                    <td style="font-size: 12px; font-family: Professional; width: 30%"><b>Build Logs</b></td>
+                    <td style="font-size:12px;font-family:Professional"><a href="${BUILD_URL}">${BUILD_URL}</a></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
