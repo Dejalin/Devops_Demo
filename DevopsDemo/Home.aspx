@@ -11,7 +11,7 @@
     <div>
      <b><asp:Label ID="lblName" runat="server" Text="Welcome to Devops!" style="font-size:medium; font-style:italic"></asp:Label></b>
         <asp:Button ID="btnAdd" runat="server" Text="Add"/>
-        <asp:Label ID="lblmsg" runat="server" Text="Hi devops"></asp:Label>
+        <asp:Label ID="lblmsg" runat="server" Text="Devops demo in VSTS!"></asp:Label>
         
     </div>
     </form>
