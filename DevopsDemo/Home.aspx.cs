@@ -13,5 +13,12 @@ namespace DevopsDemo
         {
 
         }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            lblmsg.Text = txtName.Text;
+            lblmsg.ForeColor = System.Drawing.Color.Red;
+            
+        }
     }
 }
