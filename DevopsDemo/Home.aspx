@@ -13,8 +13,9 @@
 
         <asp:TextBox ID="txtName" runat="server" ></asp:TextBox>
        &nbsp; &nbsp; <asp:Button ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click"/><br /><br />
-        <b><asp:Label ID="lblmsg" runat="server" Text="Devops demo in VSTS!"></asp:Label></b>
-        
+        <b><asp:Label ID="lblmsg" runat="server"></asp:Label></b>
+        <br />
+        <b><asp:Label ID="lbltext" runat="server" Text="Devops demo in VSTS!"></asp:Label></b>
     </div>
     </form>
 </body>
