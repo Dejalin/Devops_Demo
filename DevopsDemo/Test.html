@@ -10,36 +10,36 @@
                 <legend><b>SUMMARY</b></legend>
                 <table border="1" style="border-collapse:collapse; padding:10px; width:100%">
                     <tr>
-                        <td style="font-size:12px; font-family:Professional; width:40%"><b>Build Trigger</b></td>
-                        <td style="font-size:12px;font-family:Professional">${BUILD_CAUSE}</td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px; width:40%"><b>Build Trigger</b></td>
+                        <td style="font-size:12px;font-family:Professional; padding-left: 3px">${BUILD_CAUSE}</td>
                     </tr>
                     <tr>
-                        <td style="font-size:12px;font-family:Professional; width:40%"><b>Build Status</b></td>
-                        <td style="font-size:12px;font-family:Professional">$BUILD_STATUS</td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px; width:40%"><b>Build Status</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px">$BUILD_STATUS</td>
                     </tr>
                     <tr>
-                        <td style="font-size:12px;font-family:Professional; width:40%"><b>CheckIn By</b></td>
-                        <td style="font-size:12px;font-family:Professional">Not Applicable</td>
+                        <td style="font-size: 12px; font-family: Professional; width: 40%; padding-left: 3px"><b>CheckIn By</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px">Not Applicable</td>
                     </tr>
                     <tr>
-                        <td style="font-size:12px;font-family:Professional; width:40%"><b>Total Build Warnings</b></td>
-                        <td style="font-size:12px;font-family:Professional">0</td>
+                        <td style="font-size: 12px; font-family: Professional; width: 40%; padding-left: 3px"><b>Total Build Warnings</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px">${BUILD_LOG_REGEX,regex="\\b(Warning)\\b(?s).*",  showTruncatedLines=false}</td>
                     </tr>
                     <tr>
-                        <td style="font-size:12px;font-family:Professional; width:40%"><b>Total Build Errors</b></td>
-                        <td style="font-size:12px;font-family:Professional">0</td>
+                        <td style="font-size: 12px; font-family: Professional; width: 40%; padding-left: 3px"><b>Total Build Errors</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px">${BUILD_LOG_REGEX,regex="\\b(Error)\\b(?s).*",  showTruncatedLines=false}</td>
                     </tr>
                     <tr>
-                        <td style="font-size:12px;font-family:Professional; width:40%"><b>CheckIn Message</b></td>
-                        <td style="font-size:12px;font-family:Professional">Not Applicable</td>
+                        <td style="font-size: 12px; font-family: Professional; width: 40%; padding-left: 3px"><b>CheckIn Message</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px">Not Applicable</td>
                     </tr>
                     <tr>
-                        <td style="font-size:12px;font-family:Professional; width:40%"><b>Files Changed</b></td>
-                        <td style="font-size:12px;font-family:Professional">Not Applicable</td>
+                        <td style="font-size: 12px; font-family: Professional; width: 40%; padding-left: 3px"><b>Files Changed</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px">Not Applicable</td>
                     </tr>
                     <tr>
-                        <td style="font-size:12px;font-family:Professional; width:40%"><b>Job URL</b></td>
-                        <td style="font-size:12px;font-family:Professional"><a href="${JOB_URL}">${JOB_URL}</a></td>
+                        <td style="font-size: 12px; font-family: Professional; width: 40%; padding-left: 3px"><b>Job URL</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px"><a href="${JOB_URL}">${JOB_URL}</a></td>
                     </tr>
 
                 </table>
@@ -49,16 +49,16 @@
                 <legend><b>BUILD INFO</b></legend>
                 <table border="1" style="border-collapse: collapse; padding: 10px; width: 100%">
                     <tr>
-                        <td style="font-size:12px; font-family:Professional; width:40%"><b>Current Build Number</b></td>
-                        <td style="font-size:12px;font-family:Professional">${BUILD_DISPLAY_NAME}</td>
+                        <td style="font-size: 12px; font-family: Professional; width: 40%; padding-left: 3px"><b>Current Build Number</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px">${BUILD_DISPLAY_NAME}</td>
                     </tr>
                     <tr>
-                        <td style="font-size: 12px; font-family: Professional; width: 40%"><b>Build Status</b></td>
-                        <td style="font-size:12px;font-family:Professional">$BUILD_STATUS</td>
+                        <td style="font-size: 12px; font-family: Professional; width: 40%; padding-left: 3px"><b>Build Status</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px">$BUILD_STATUS</td>
                     </tr>
                     <tr>
-                        <td style="font-size: 12px; font-family: Professional; width: 40%"><b>Current Build Server</b></td>
-                        <td style="font-size:12px;font-family:Professional">CustomTenant-Build</td>
+                        <td style="font-size: 12px; font-family: Professional; width: 40%; padding-left: 3px"><b>Current Build Server</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px">Implementation-Build</td>
                     </tr>
                 </table>
             </fieldset>
@@ -66,13 +66,12 @@
                 <legend><b>LOGS</b></legend>
                 <table border="1" style="border-collapse: collapse; padding: 10px; width: 100%">
                     <tr>
-                        <td style="font-size: 12px; font-family: Professional; width: 40%"><b>Build Logs</b></td>
-                        <td style="font-size:12px;font-family:Professional"><a href="${BUILD_URL}">${BUILD_URL}</a></td>
+                        <td style="font-size: 12px; font-family: Professional; width: 40%; padding-left: 3px"><b>Build Logs</b></td>
+                        <td style="font-size: 12px; font-family: Professional; padding-left: 3px"><a href="${BUILD_URL}">${BUILD_URL}</a></td>
                     </tr>
                 </table>
-            </fieldset>  
-                
-        </div>
+            </fieldset>                  
+        </div>     
     </form>
 </body>
 </html>
